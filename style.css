@@ -36,6 +36,7 @@ body {
     /* margin: 0px auto; */
     margin-bottom: 1rem;
     text-align: center;
+    color: #333;
 }
 .netBalalce {
     display: flex;
@@ -53,6 +54,13 @@ body {
     gap: 0.4rem;
     text-align: center;
     height: auto;
+    border-radius: 0.2rem;
+    color: #333;
+
+    transition: 0.5s;
+}
+.card:hover {
+    transform: translateY(-5px);
 }
 #form {
     width: 100%;
@@ -61,6 +69,15 @@ body {
     width: 100%;
     padding: 0.4rem 0.5rem;
     font-size: large;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    background-color: #eee;
+    color: #333333c2;
+    font-style: italic;
+    transition: 0.2s;
+}
+#typeNumber:active {
+    background-color: rgba(0, 128, 0, 0.171);
 }
 .buttons {
     display: flex;
@@ -75,15 +92,26 @@ body {
     width: 47%;
     border-radius: 0.4rem;
     border: 0px solid green;
+    transition: 0.7s;
+    font-size: large;
+    cursor: pointer;
 }
 #WithdrawButton {
     background-color: red;
+    font-size: large;
+    cursor: pointer;
     padding: 0.7rem 2rem;
     color: white;
     border-radius: 0.4rem;
     width: 47%;
-
+    transition: 0.7s;
     border: 0px solid red;
+}
+#DepositButton:hover {
+    background-color: rgb(7, 43, 7);
+}
+#WithdrawButton:hover {
+    background-color: rgb(17, 14, 59);
 }
 @media screen and (max-width: 600px) {
     .netBalalce {
